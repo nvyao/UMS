@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1>{{ request.session.user_name }}，欢迎回来！</h1>
+<p>
+    <div>您的Userid是：{{ request.session.user_id }}  -----是否登录：{{ request.session.is_login }}</div>
+    <br />
+    <a href="/logout/">登出</a>
+</p>
+</body>
+</html>
